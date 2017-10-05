@@ -7,11 +7,15 @@ import "./css/AdminLTE/dist/css/AdminLTE.css";
 import "./css/AdminLTE/dist/css/skins/_all-skins.css";
 import "./css/crmcustom.css";
 import "./css/treechart.css";
+import {BrowserRouter, Route} from 'react-router-dom';
 
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
-   <App/>, document.getElementById('root'));
+    <BrowserRouter>
+    <App/>
+
+</BrowserRouter>, document.getElementById('root'));
 
 registerServiceWorker();
